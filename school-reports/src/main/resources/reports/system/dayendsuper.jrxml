@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-03-30T12:34:17 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="anc" pageWidth="1190" pageHeight="842" orientation="Landscape" columnWidth="1150" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="adfd564b-f547-486b-bb2f-37243482432f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<subDataset name="AncDataset" uuid="e1b011c1-eb57-4c87-8278-bb25dff09b5b">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="fullname" class="java.lang.String">
+			<fieldDescription><![CDATA[fullname]]></fieldDescription>
+		</field>
+		<field name="address" class="java.lang.String">
+			<fieldDescription><![CDATA[address]]></fieldDescription>
+		</field>
+		<field name="date" class="java.lang.String">
+			<fieldDescription><![CDATA[date]]></fieldDescription>
+		</field>
+		<field name="firstBooking" class="java.lang.String">
+			<fieldDescription><![CDATA[firstBooking]]></fieldDescription>
+		</field>
+		<field name="contactNumber" class="java.lang.String">
+			<fieldDescription><![CDATA[contactNumber]]></fieldDescription>
+		</field>
+		<field name="age" class="java.lang.String">
+			<fieldDescription><![CDATA[age]]></fieldDescription>
+		</field>
+		<field name="gravida" class="java.lang.String">
+			<fieldDescription><![CDATA[gravida]]></fieldDescription>
+		</field>
+		<field name="parity" class="java.lang.String">
+			<fieldDescription><![CDATA[parity]]></fieldDescription>
+		</field>
+		<field name="hivStatus" class="java.lang.String">
+			<fieldDescription><![CDATA[hivStatus]]></fieldDescription>
+		</field>
+		<field name="lnmp" class="java.lang.String">
+			<fieldDescription><![CDATA[lnmp]]></fieldDescription>
+		</field>
+		<field name="edd" class="java.lang.String">
+			<fieldDescription><![CDATA[edd]]></fieldDescription>
+		</field>
+		<field name="gestationalAge" class="java.lang.String">
+			<fieldDescription><![CDATA[gestationalAge]]></fieldDescription>
+		</field>
+		<field name="artInitiated" class="java.lang.String">
+			<fieldDescription><![CDATA[artInitiated]]></fieldDescription>
+		</field>
+		<field name="artNumber" class="java.lang.String">
+			<fieldDescription><![CDATA[artNumber]]></fieldDescription>
+		</field>
+	</subDataset>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="data" class="java.util.Collection">
+		<fieldDescription><![CDATA[data]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="259" splitType="Stretch">
+			<subreport>
+				<reportElement x="0" y="0" width="780" height="259" uuid="9066e6f0-40a1-46af-9778-afb4e0f14d6e"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{data})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/system/dayend.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

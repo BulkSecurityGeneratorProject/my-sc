@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-04-04T13:57:36 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="anv_visit" pageWidth="2380" pageHeight="1684" orientation="Landscape" columnWidth="2340" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f34d865c-7f81-4b8c-beb6-6d6345194c2f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="AncDataset" uuid="e1b011c1-eb57-4c87-8278-bb25dff09b5b">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="date" class="java.util.Date">
+			<fieldDescription><![CDATA[date]]></fieldDescription>
+		</field>
+		<field name="heightOfFundus" class="java.lang.String">
+			<fieldDescription><![CDATA[heightOfFundus]]></fieldDescription>
+		</field>
+		<field name="presentation" class="java.lang.String">
+			<fieldDescription><![CDATA[presentation]]></fieldDescription>
+		</field>
+		<field name="weight" class="java.lang.String">
+			<fieldDescription><![CDATA[weight]]></fieldDescription>
+		</field>
+		<field name="muac" class="java.lang.String">
+			<fieldDescription><![CDATA[muac]]></fieldDescription>
+		</field>
+		<field name="bp" class="java.lang.String">
+			<fieldDescription><![CDATA[bp]]></fieldDescription>
+		</field>
+		<field name="malariaProphylaxis" class="java.lang.String">
+			<fieldDescription><![CDATA[malariaProphylaxis]]></fieldDescription>
+		</field>
+		<field name="tetanusToxiod" class="java.lang.String">
+			<fieldDescription><![CDATA[tetanusToxiod]]></fieldDescription>
+		</field>
+		<field name="ironSupplements" class="java.lang.String">
+			<fieldDescription><![CDATA[ironSupplements]]></fieldDescription>
+		</field>
+		<field name="hbResults" class="java.lang.String">
+			<fieldDescription><![CDATA[hbResults]]></fieldDescription>
+		</field>
+		<field name="bloodGroupResults" class="java.lang.String">
+			<fieldDescription><![CDATA[bloodGroupResults]]></fieldDescription>
+		</field>
+		<field name="rhResults" class="java.lang.String">
+			<fieldDescription><![CDATA[rhResults]]></fieldDescription>
+		</field>
+		<field name="glucoseResults" class="java.lang.String">
+			<fieldDescription><![CDATA[glucoseResults]]></fieldDescription>
+		</field>
+		<field name="hivResult" class="java.lang.String">
+			<fieldDescription><![CDATA[hivResult]]></fieldDescription>
+		</field>
+		<field name="artInitiated" class="java.lang.String">
+			<fieldDescription><![CDATA[artInitiated]]></fieldDescription>
+		</field>
+		<field name="artNumber" class="java.lang.String">
+			<fieldDescription><![CDATA[artNumber]]></fieldDescription>
+		</field>
+		<field name="cd4Result" class="java.lang.String">
+			<fieldDescription><![CDATA[cd4Result]]></fieldDescription>
+		</field>
+		<field name="viralLoadResult" class="java.lang.String">
+			<fieldDescription><![CDATA[viralLoadResult]]></fieldDescription>
+		</field>
+		<field name="cd4Drawn" class="java.lang.String">
+			<fieldDescription><![CDATA[cd4Drawn]]></fieldDescription>
+		</field>
+		<field name="iycfDone" class="java.lang.String">
+			<fieldDescription><![CDATA[iycfDone]]></fieldDescription>
+		</field>
+		<field name="syphilisResult" class="java.lang.String">
+			<fieldDescription><![CDATA[syphilisResult]]></fieldDescription>
+		</field>
+		<field name="tbScreening" class="java.lang.String">
+			<fieldDescription><![CDATA[tbScreening]]></fieldDescription>
+		</field>
+		<field name="partnerHivResult" class="java.lang.String">
+			<fieldDescription><![CDATA[partnerHivResult]]></fieldDescription>
+		</field>
+		<field name="comments" class="java.lang.String">
+			<fieldDescription><![CDATA[comments]]></fieldDescription>
+		</field>
+		<field name="visitNumber" class="java.lang.Integer">
+			<fieldDescription><![CDATA[visitNumber]]></fieldDescription>
+		</field>
+	</subDataset>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="fullname" class="java.lang.String">
+		<fieldDescription><![CDATA[fullname]]></fieldDescription>
+	</field>
+	<field name="address" class="java.lang.String">
+		<fieldDescription><![CDATA[address]]></fieldDescription>
+	</field>
+	<field name="date" class="java.util.Date">
+		<fieldDescription><![CDATA[date]]></fieldDescription>
+	</field>
+	<field name="firstBooking" class="java.lang.String">
+		<fieldDescription><![CDATA[firstBooking]]></fieldDescription>
+	</field>
+	<field name="contactNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[contactNumber]]></fieldDescription>
+	</field>
+	<field name="age" class="java.lang.Integer">
+		<fieldDescription><![CDATA[age]]></fieldDescription>
+	</field>
+	<field name="gravida" class="java.lang.Integer">
+		<fieldDescription><![CDATA[gravida]]></fieldDescription>
+	</field>
+	<field name="parity" class="java.lang.Integer">
+		<fieldDescription><![CDATA[parity]]></fieldDescription>
+	</field>
+	<field name="hivStatus" class="java.lang.String">
+		<fieldDescription><![CDATA[hivStatus]]></fieldDescription>
+	</field>
+	<field name="lnmp" class="java.util.Date">
+		<fieldDescription><![CDATA[lnmp]]></fieldDescription>
+	</field>
+	<field name="edd" class="java.util.Date">
+		<fieldDescription><![CDATA[edd]]></fieldDescription>
+	</field>
+	<field name="gestationalAge" class="java.lang.String">
+		<fieldDescription><![CDATA[gestationalAge]]></fieldDescription>
+	</field>
+	<field name="artInitiated" class="java.lang.String">
+		<fieldDescription><![CDATA[artInitiated]]></fieldDescription>
+	</field>
+	<field name="artNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[artNumber]]></fieldDescription>
+	</field>
+	<field name="ancVisits" class="java.util.Collection">
+		<fieldDescription><![CDATA[ancVisits]]></fieldDescription>
+	</field>
+	<field name="ancNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[ancNumber]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="80" splitType="Stretch">
+			<frame>
+				<reportElement x="-20" y="-10" width="1340" height="78" uuid="2f03c5b6-15d6-4eaa-966a-d5bbdb033e8f">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="0" y="48" width="70" height="30" uuid="f1840726-6b2f-46e6-8954-ecef58b8ec65"/>
+					<textElement>
+						<paragraph leftIndent="1"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{fullname}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="72" y="48" width="108" height="30" uuid="b33db607-77e0-4005-889b-ad5e0fbda025"/>
+					<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+				</textField>
+				<textField pattern="yyyy-MM-dd" isBlankWhenNull="true">
+					<reportElement x="182" y="48" width="88" height="30" uuid="4a1f141c-3e34-4f75-b546-97d6f4fe84ac"/>
+					<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="272" y="48" width="68" height="30" uuid="4b6acf63-3cc0-4bf0-bf6e-f2cb19bb0720"/>
+					<textFieldExpression><![CDATA[$F{firstBooking}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="342" y="48" width="77" height="30" uuid="963a03d5-4c53-4769-9e05-229c7dbfc6f0"/>
+					<textFieldExpression><![CDATA[$F{contactNumber}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="421" y="48" width="48" height="30" uuid="d7dd83f5-3a29-4a7f-8690-bb9f626ab7a7"/>
+					<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="471" y="48" width="47" height="30" uuid="41460b6a-b85e-4288-b930-61c9246ae35a"/>
+					<textFieldExpression><![CDATA[$F{gravida}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="520" y="48" width="34" height="30" uuid="374f8193-43da-4be9-967e-8b897f4de1c6"/>
+					<textFieldExpression><![CDATA[$F{parity}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="562" y="49" width="82" height="30" uuid="00f425f1-ec76-440f-b810-68772c940c81"/>
+					<textFieldExpression><![CDATA[$F{hivStatus}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="yyyy-MM-dd" isBlankWhenNull="true">
+					<reportElement x="708" y="48" width="62" height="30" uuid="1a30387b-7bc1-4cfe-b4da-66e42c473fc6"/>
+					<textFieldExpression><![CDATA[$F{lnmp}]]></textFieldExpression>
+				</textField>
+				<textField pattern="yyyy-MM-dd" isBlankWhenNull="true">
+					<reportElement x="776" y="48" width="67" height="30" uuid="005d4ad7-8dd2-471f-afc0-7ef62911f544"/>
+					<textFieldExpression><![CDATA[$F{edd}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="848" y="49" width="104" height="30" uuid="38717573-1087-46e7-a0b7-aec3332cff58"/>
+					<textFieldExpression><![CDATA[$F{gestationalAge}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="972" y="48" width="85" height="30" uuid="5a728037-500f-4bad-a71b-2beb8132a2e3">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[$F{artInitiated}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="1072" y="48" width="126" height="30" uuid="c80bce07-cec1-4660-821a-44b4cb5e103d">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[$F{artNumber}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement key="" x="0" y="31" width="70" height="15" uuid="e1bbbadf-ccc0-4347-9668-8911f3698420"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement>
+						<paragraph leftIndent="1"/>
+					</textElement>
+					<text><![CDATA[Names]]></text>
+				</staticText>
+				<staticText>
+					<reportElement key="" x="72" y="31" width="108" height="15" uuid="1c2b35ab-196d-49e0-a3a0-813cb0081c57"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<text><![CDATA[Address]]></text>
+				</staticText>
+				<staticText>
+					<reportElement key="" x="182" y="31" width="88" height="15" uuid="c50ecb18-bdf7-411e-9b5a-fda66fe3cde4"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<text><![CDATA[Registration Date]]></text>
+				</staticText>
+				<staticText>
+					<reportElement key="" x="272" y="31" width="68" height="15" uuid="91f1b923-4ee0-48c9-9f64-b2a661e5d0f2"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<text><![CDATA[First Booking]]></text>
+				</staticText>
+				<staticText>
+					<reportElement key="" x="342" y="31" width="77" height="15" uuid="74b15b48-35e9-41cf-943d-60aa12dbc6a1"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<text><![CDATA[Contact #]]></text>
+				</staticText>
+				<staticText>
+					<reportElement key="" x="421" y="31" width="48" height="15" uuid="36b70ba7-cf21-4f17-af48-311a7cbcaaa4"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<text><![CDATA[Age(yrs)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement key="" x="471" y="31" width="47" height="15" uuid="16c4f4f7-d07b-4ee3-9824-3ff6a34ac25b"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<text><![CDATA[Gravida]]></text>
+				</staticText>
+				<staticText>
+					<reportElement key="" x="520" y="31" width="33" height="15" uuid="e991d831-d989-45da-a581-3f91b4576b59"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<text><![CDATA[Parity]]></text>
+				</staticText>
+				<staticText>
+					<reportElement key="" positionType="FixRelativeToBottom" x="561" y="30" width="135" height="15" uuid="5f70ba2c-4c25-4224-9fbc-a028cb7b52a3"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[HIV Status prior to booking]]></text>
+				</staticText>
+				<staticText>
+					<reportElement key="" x="708" y="31" width="57" height="15" uuid="8734f669-ff1c-4782-b68a-f4b3be5d75c6"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<text><![CDATA[LNMP]]></text>
+				</staticText>
+				<staticText>
+					<reportElement key="" x="776" y="31" width="67" height="15" uuid="c0953a72-abb5-4d59-ad06-85bcf8b177d0"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<text><![CDATA[EDD]]></text>
+				</staticText>
+				<staticText>
+					<reportElement key="" x="843" y="32" width="129" height="15" uuid="a9ebfae9-b957-4c97-bef2-a94c4789072c"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<text><![CDATA[Gestational age on booking]]></text>
+				</staticText>
+				<staticText>
+					<reportElement key="" x="972" y="32" width="85" height="15" uuid="14b94658-8644-4c11-b0c8-ec55587d42ae">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<text><![CDATA[Already on ART]]></text>
+				</staticText>
+				<staticText>
+					<reportElement key="" x="1072" y="33" width="126" height="14" uuid="ef1c4c34-30e3-4fd4-98f9-02f42ec3b07c"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<text><![CDATA[ART #]]></text>
+				</staticText>
+				<staticText>
+					<reportElement key="" x="0" y="17" width="80" height="15" uuid="930b6979-ce3a-4b58-bf2e-de0e9333192b"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement>
+						<paragraph leftIndent="1"/>
+					</textElement>
+					<text><![CDATA[ANC Number]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="79" y="18" width="140" height="13" uuid="c3a5a317-1564-4690-a2c2-e02fe42b0847"/>
+					<textFieldExpression><![CDATA[$F{ancNumber}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="155">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<componentElement>
+				<reportElement x="-20" y="-11" width="1360" height="100" uuid="f31f74f1-c740-4526-b092-a5eed43e8afd">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="AncDataset" uuid="0ae0a9ac-51c6-4ef7-8846-786760cf40e6">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{ancVisits})]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="55" uuid="bcce77d7-f707-4cf6-b26a-041986f40dd8">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="55" height="40" uuid="75568e25-9b60-4572-90f1-2a8e5f98122c"/>
+								<text><![CDATA[Date]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<textField pattern="yyyy-MM-dd" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="55" height="30" uuid="bea56073-2817-49d5-a64d-0a8b8a4dac32"/>
+								<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="55" uuid="3cefc3e1-fe27-4560-afc1-78ee4db06fe8">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="55" height="40" isPrintWhenDetailOverflows="true" uuid="380fadc6-311c-4ef5-85db-598360de5fb7"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[Visit number]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="55" height="30" uuid="686c6658-2ffc-4efe-9e6c-4ce5b7a7bde3"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{visitNumber}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="4675251e-e071-49d9-b176-9956b8bcefad">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="40" isPrintWhenDetailOverflows="true" uuid="64083762-32d0-496b-8a7e-a607cca9dc3b"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[Height of Fundus]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="40" height="30" uuid="28eb60d5-0e2d-4506-a9d6-22a125010a62"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{heightOfFundus}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="65" uuid="31d7b02b-3efd-4640-8b90-5d4e6bf3f364">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="65" height="40" uuid="f24d7ef1-85e7-4045-85fe-e47529e87ab1"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[Presentation]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="65" height="30" uuid="4f4b0365-af3b-4c09-b309-fb8eba723ce4"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{presentation}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="6d746eb8-dcfc-420e-93a4-ab1d9b73d6e3">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="40" uuid="cd7f541d-8dfc-4621-9273-99a15ba69d58"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[Weight]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="40" height="30" uuid="427e3c27-f857-47e2-9794-d3e82c57845d"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{weight}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="9146a594-fa18-4958-bb61-b75744148298">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="40" uuid="8b575ca6-369f-474b-ba6b-e084e7b54b64"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[MUAC]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="40" height="30" uuid="52fcf4ac-c143-4bbc-b939-7ac0c40f9e0f"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{muac}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="17c42ffb-dddd-4352-a66a-373c54a9a978">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column7"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="40" uuid="7ecb7292-ec9e-440c-950e-6224a23f4564"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[BP]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="40" height="30" uuid="5b4e9a3e-7570-4ae2-8674-d7bf9271f772"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{bp}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="f2dbfe18-7052-4de6-8018-378ca673266f">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column8"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="60" height="40" uuid="0f3d05fa-7a14-4f4e-bcfd-b9875447ff33"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[Malaria Prophylaxis]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="60" height="30" uuid="71974ee6-c0e4-4f06-b34d-6d0666271090"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{malariaProphylaxis}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="17d629a8-d77d-4251-8036-122044d2c164">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column9"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="50" height="40" uuid="c4a4cc68-68de-4d4c-b0bd-76bb35f5258f"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[Tetanus toxoid]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="50" height="30" uuid="68d4dd00-cb95-4084-842c-92417b4c6b18"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{tetanusToxiod}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="65" uuid="9f85370f-96cf-4d3f-954f-5e4da6f65ce7">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column10"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="65" height="40" uuid="bd17f032-f17c-4fcd-ae0f-d0bcf60d9837"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[Iron supplements]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="65" height="30" uuid="e2eee250-b7c7-428e-b622-5bb9f1e25e64"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{ironSupplements}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="886ccbd4-41eb-4f83-9e55-4de7f47619a5">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column11"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="40" uuid="505b0ccc-ee57-4728-95a8-f9620ee38079"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[Hb result]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="40" height="30" uuid="f1143a3b-f7e5-4a46-bc30-f0a5c64453c7"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{hbResults}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="45" uuid="394f69a9-8660-4ad5-b57e-5fd2d145f0c3">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column12"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="45" height="40" uuid="cdb6b908-720c-4cb4-ae28-9a1c72d30c66"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[Blood grouping results]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="45" height="30" uuid="2c4a7ba1-02be-41b0-9ad7-c8f728dc0c10"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{bloodGroupResults}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="65" uuid="d9853cd4-184e-412b-98a1-407c258443cc">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column13"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="65" height="40" uuid="27983f51-b943-4f44-b2dd-db1a121ee24d"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[Rh results]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="65" height="30" uuid="a3279e23-abeb-4609-82c4-4b069186508f"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{rhResults}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="62cce29a-20c5-4b38-901d-41d2e842d695">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column14"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="40" uuid="46d0f5e8-ae8c-488c-9ab7-19f4ba3305a5"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[Blood glucose result]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="40" height="30" uuid="b0cadac2-0279-4802-be21-4633c244395c"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{glucoseResults}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="8374bea7-9f19-412f-9047-c2be5d6646ad">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column15"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="40" uuid="4a1628b5-6022-4602-84e0-1dac677970c7"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[IYCF results done]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="40" height="30" uuid="9773306f-48ae-44de-9c24-4abb852b0c97"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{iycfDone}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="55" uuid="a00a7cde-ced7-4c5d-92b9-bc098ffb8ab4">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column16"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="55" height="40" uuid="8a80ada7-1d2a-4699-a1d4-8406996bb790"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[Syphillis test results]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="55" height="30" uuid="da4761b7-f3c2-49dd-a9c9-c631f4c54301"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{syphilisResult}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="df7ca458-99f2-4d02-aead-df28826a5a6a">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column17"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="60" height="40" uuid="1290dbaf-0d43-4afa-91d4-b7a86187a346"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[HIV test result in ANC]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="60" height="30" uuid="2034051c-e478-478d-88e9-065d555c4281"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{hivResult}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="70" uuid="ce9b9207-ebd2-488f-bf6e-5da2dc310e31">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column18"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="70" height="40" uuid="b1dcf194-bffd-4a0d-808d-1a07033c2bef"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[ART initiated]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="70" height="30" uuid="a66f6ca5-86c1-4b6a-9380-92ff1473f791"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{artInitiated}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="65" uuid="1699ff77-ed19-4e59-98f2-aed08a692cb7">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column19"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="65" height="40" uuid="cbff8c79-94b2-436c-89af-151f3542c6f0"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[If positive indicate OI/ART number]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="65" height="30" uuid="c8e87665-3c07-40fa-a359-92f2b467e9cd"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{artNumber}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="1907f6ab-ca87-4f10-b7a0-ba4f4b82ab79">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column20"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="50" height="40" uuid="6be950ee-05a6-466f-94a3-1a3c2b5b0941"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[screened for TB]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="50" height="30" uuid="51da00e8-fb4f-4608-8d73-4c963749bc8d"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{tbScreening}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="42558fdc-e752-4da7-9236-4180c9be35db">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column21"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="60" height="40" uuid="29585203-fd85-4402-8028-fd81a269a8d6"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[CD4 blood sample drawn]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="60" height="30" uuid="e3d16170-1042-4a52-b14b-1ca698682f9d"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{cd4Drawn}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="35" uuid="531eee1c-5f60-4eb2-afdc-1c5b10be2ad2">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column22"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="35" height="40" uuid="50b0c661-402f-4910-8fbd-76f851e186a6"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[CD4 results]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="35" height="30" uuid="4227219d-81fd-4d76-92ca-f39fbd1c7a3a"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{cd4Result}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="45" uuid="8ba8ed59-61fc-43a8-bdd2-a2c46b363307">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column23"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="45" height="40" uuid="f49249f9-e1f2-407d-bc83-926413f1be1e"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[Viral load results]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="45" height="30" uuid="f2693e61-2e4c-4e9b-8e8e-705bf7155c99"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{viralLoadResult}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="451ea802-1a11-4ded-ab04-cee019fbff73">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column24"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="60" height="40" uuid="f3a2d685-bb86-4701-bcf6-ebf4918e36de"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[Partner test result in ANC]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="60" height="30" uuid="bfa33260-db93-4208-8236-4bebc4f0b8eb"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{partnerHivResult}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100" uuid="7425efff-7dde-4d10-98b0-36d9a9868f44">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column25"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="40" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="40" uuid="43864ff4-9397-46b9-a457-8ab58ad60265">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<text><![CDATA[Comment]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="100" height="30" uuid="2a07cffe-8df2-487a-9b11-c38b99271517"/>
+								<textFieldExpression><![CDATA[$F{comments}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>

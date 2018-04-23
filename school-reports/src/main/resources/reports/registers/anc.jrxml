@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.2.final using JasperReports Library version 6.2.2  -->
+<!-- 2016-05-24T12:39:58 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="anc" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="adfd564b-f547-486b-bb2f-37243482432f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="AncDataset" uuid="e1b011c1-eb57-4c87-8278-bb25dff09b5b">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="fullname" class="java.lang.String">
+			<fieldDescription><![CDATA[fullname]]></fieldDescription>
+		</field>
+		<field name="address" class="java.lang.String">
+			<fieldDescription><![CDATA[address]]></fieldDescription>
+		</field>
+		<field name="date" class="java.util.Date">
+			<fieldDescription><![CDATA[date]]></fieldDescription>
+		</field>
+		<field name="firstBooking" class="java.lang.String">
+			<fieldDescription><![CDATA[firstBooking]]></fieldDescription>
+		</field>
+		<field name="contactNumber" class="java.lang.String">
+			<fieldDescription><![CDATA[contactNumber]]></fieldDescription>
+		</field>
+		<field name="age" class="java.lang.String">
+			<fieldDescription><![CDATA[age]]></fieldDescription>
+		</field>
+		<field name="gravida" class="java.lang.String">
+			<fieldDescription><![CDATA[gravida]]></fieldDescription>
+		</field>
+		<field name="parity" class="java.lang.String">
+			<fieldDescription><![CDATA[parity]]></fieldDescription>
+		</field>
+		<field name="hivStatus" class="java.lang.String">
+			<fieldDescription><![CDATA[hivStatus]]></fieldDescription>
+		</field>
+		<field name="lnmp" class="java.lang.String">
+			<fieldDescription><![CDATA[lnmp]]></fieldDescription>
+		</field>
+		<field name="edd" class="java.lang.String">
+			<fieldDescription><![CDATA[edd]]></fieldDescription>
+		</field>
+		<field name="gestationalAge" class="java.lang.String">
+			<fieldDescription><![CDATA[gestationalAge]]></fieldDescription>
+		</field>
+		<field name="artInitiated" class="java.lang.String">
+			<fieldDescription><![CDATA[artInitiated]]></fieldDescription>
+		</field>
+		<field name="artNumber" class="java.lang.String">
+			<fieldDescription><![CDATA[artNumber]]></fieldDescription>
+		</field>
+	</subDataset>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<field name="year" class="java.lang.Integer">
+		<fieldDescription><![CDATA[year]]></fieldDescription>
+	</field>
+	<field name="monthName" class="java.lang.String">
+		<fieldDescription><![CDATA[monthName]]></fieldDescription>
+	</field>
+	<field name="data" class="java.util.Collection">
+		<fieldDescription><![CDATA[data]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="797" height="79" uuid="3fb978e4-f6c0-46cf-b1da-564013cb5677"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MINISTRY OF HEALTH AND CHILD CARE]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="38" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="5" width="50" height="15" uuid="d90bb901-1bee-4334-ba17-f0ceebc679ea">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<text><![CDATA[Report:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="24" width="50" height="14" uuid="6a88dc14-9791-4904-a45a-263e85f9ea0b">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<text><![CDATA[Year]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="70" y="5" width="350" height="15" uuid="fd5fe184-9215-4860-9f28-964b2204aee4">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="24" width="40" height="14" uuid="a3a4c094-5269-4f3e-97fc-9c32ae9281a3">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{year}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="114" y="24" width="35" height="14" uuid="4c57474b-50ff-45db-b067-2151b888bda2">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<text><![CDATA[Month]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="150" y="24" width="83" height="14" uuid="3bbd26a4-d22a-4455-80a5-aa05f7291c8a">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{monthName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="259" splitType="Stretch">
+			<subreport>
+				<reportElement x="0" y="0" width="752" height="259" uuid="9066e6f0-40a1-46af-9778-afb4e0f14d6e"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{data})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/registers/anc/anc_visit.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

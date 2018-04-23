@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns='http://www.ehcache.org/v3'
+         xsi:schemaLocation="http://www.ehcache.org/v3 http://www.ehcache.org/schema/ehcache-core-3.0.xsd">
+
+    <cache-template name="simple">
+        <expiry>
+            <ttl unit="seconds">3600</ttl>
+        </expiry>
+        <heap>100</heap>
+    </cache-template>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.AppointmentReason" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.AppointmentReschedullingReason" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ArtVisitStatus" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ArtVisitType" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.DeliveryType" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.EducationLevel" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.FamilyPlanningMethod" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.FeedingOption" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.FollowUpStatus" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Formulation" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Vital" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Examination" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Complaint" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Diagnosis" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Diagnosis.results" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Frequency" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.HealthEducationTopic" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.HtsModel" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.HtsPostTestServiceOffered" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.IptReason" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.LevelOfPresentingPart" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.MaritalState" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.MaternalDeathFactor" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Occupation" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PersonIdentifier" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PeriniumRepairType" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PlacentaDeliveryType" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PncVisitType" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PurposeOfTest" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ReasonForNotIssuingResult" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ReferralReason" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.RelationshipType" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.LabResult" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Sample" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.SocialHistory" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Standard" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.TbRiskGroup" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.TbStatus" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.TestKit" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.LabTest" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Unit" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.DegreeOfMoulding" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.AdmissionReason" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Allergy" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.AppointmentCancellationReason" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Department" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Facility" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Opd" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Opd.encounters" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Queue" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Ward" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Encounter" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Encounter.procedures" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Encounter.diagnoses" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Encounter.complaints" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Encounter.investigations" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Encounter.examinations" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Encounter.vitals" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Encounter.medicines" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Encounter.prescriptions" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Encounter.notes" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Person" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Person.addresses" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Person.phones" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Person.emails" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Person.medicalAids" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Person.identifiers" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Person.relations" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Address" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Town" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Phone" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Email" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Referral" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.MedicalAid" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.MedicalAidProvider" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Province" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Province.districts" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.District" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.District.towns" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.MedicalProcedure" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.DrugName" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.DrugName.suffixes" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Drug" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Investigation" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Investigation.results" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PersonId" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Relation" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.InvestigationResult" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.InvestigationResult.diagnoses" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.EncounterExamination" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.EncounterProcedure" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.EncounterVital" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.EncounterComplaint" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.EncounterMedication" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.EncounterDiagnosis" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.EncounterInvestigation" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PersonExamination" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PersonMedication" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PersonComplaint" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PersonVital" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PersonDiagnosis" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PersonProcedure" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PersonInvestigation" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PersonInvestigation.tests" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Pnc" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Pnc.visists" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Pnc.children" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PncVisit" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PncVisit.pncProperties" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Hts" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Tb" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Tb.surveys" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Tb.visits" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.OpdEncounter" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.TbCategory" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Art" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Art.currentSymptoms" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Art.currentSigns" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Art.medicalHistories" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Art.investigationHistories" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Art.visits" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PncProperty" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Admission" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Admission.encounters" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Admission.reasons" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.AdmissionEncounter" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Appointment" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Anc" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Anc.visists" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Anc.socialHistories" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.AncVisit" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.TbSurvey" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PersonArtStatus" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.TbVisit" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PersonArtRegimen" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.GeneralAssessment" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PersonArtWhoStage" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PersonArtIptStatus" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.DoctorVaginalExamination" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.NurseVaginalExamination" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ObstretricExamination" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PersonArtFunctionalStatus" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PersonArtFollowUpStatus" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.DeliverySummary" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ArtCurrentSymptom" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ArtCurrentSign" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ArtVisit" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ArtVisit.newOis" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ObstetricExamination" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ArtVisitNewOi" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PlacentaAndMembrane" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ArtStatus" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ArtReason" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ArvCombinationRegimen" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.FunctionalStatus" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.LabourSummary" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Degree" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.VaginalMonitoring" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Infant" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.FoetalDeath" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Cervix" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Contraction" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Stage" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.StageNumber" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.MaternalDeath" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.DeliveryMaternalDeathFactor" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.DeliveryHistory" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.DoctorGeneralExamination" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.NurseGeneralExamination" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Delivery" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Delivery.cervixes" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Delivery.contractions" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Delivery.stages" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Delivery.infants" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Delivery.vaginalMonitorings" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ArtMedicalHistory" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ArtInvestigationHistory" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.InvestigationHistory" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ArtQuestionare" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PncQuestionare" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PncQuestionareCategory" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.TbQuestionare" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.AncQuestionare" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PersonInvestigationTest" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Laboratory" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.InvestigationTestKit" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.TestKitBatch" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Supplier" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.DrugSuffix" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.DrugOption" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.DrugBatch" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Dispense" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.Prescription" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ReasonForAdmission" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.EncounterNote" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.OpdQueue" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PncChild" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.IptStatus" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.HtsPostTestService" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.SiteSetting" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.PersonAllergy" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ImnciCategory" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ImnciCategory.classifications" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ImnciCategory.questions" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ImnciClassification" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ImnciVisit" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ImnciVisit.classifications" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ImnciVisit.questions" uses-template="simple"/>
+
+    <cache alias="zw.gov.mohcc.mrs.domain.ImnciVisitQuestion" uses-template="simple"/>
+
+    <!-- jhipster-needle-ehcache-add-entry -->
+</config>

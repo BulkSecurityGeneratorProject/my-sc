@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>school</artifactId>
+		<groupId>zw.co.elearning.school</groupId>
+		<version>2.0.1</version>
+	</parent>
+	<artifactId>school-domain</artifactId>
+	<name>School Domain</name>
+	<description>School Domain</description>
+	<properties>
+		<start-class>zw.co.elearning.school.SchoolApp</start-class>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>zw.co.elearning.school</groupId>
+			<artifactId>school-core</artifactId>
+		</dependency>
+	</dependencies>
+</project>

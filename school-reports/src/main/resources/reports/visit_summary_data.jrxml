@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.2.final using JasperReports Library version 6.2.2  -->
+<!-- 2016-07-06T11:44:39 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="visit_summary_data" pageWidth="297" pageHeight="421" columnWidth="257" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="20" uuid="b5a39251-8dfc-4c03-bdb5-67f72e15df68">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="vitals" class="java.lang.String">
+		<fieldDescription><![CDATA[vitals]]></fieldDescription>
+	</field>
+	<field name="complaints" class="java.lang.String">
+		<fieldDescription><![CDATA[complaints]]></fieldDescription>
+	</field>
+	<field name="allergies" class="java.lang.String">
+		<fieldDescription><![CDATA[allergies]]></fieldDescription>
+	</field>
+	<field name="tests" class="java.lang.String">
+		<fieldDescription><![CDATA[tests]]></fieldDescription>
+	</field>
+	<field name="diagnoses" class="java.lang.String">
+		<fieldDescription><![CDATA[diagnoses]]></fieldDescription>
+	</field>
+	<field name="medications" class="java.lang.String">
+		<fieldDescription><![CDATA[medications]]></fieldDescription>
+	</field>
+	<field name="referral" class="java.lang.String">
+		<fieldDescription><![CDATA[referral]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="40">
+			<printWhenExpression><![CDATA[$F{vitals}!=""]]></printWhenExpression>
+			<textField isBlankWhenNull="false">
+				<reportElement x="-19" y="11" width="275" height="29" uuid="5114f929-ffb1-4ae6-bb61-2266bcc42fe3">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{vitals}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-19" y="1" width="100" height="10" uuid="648b37fb-833e-4888-9643-d12c26e66ed3"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Vital Signs]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-19" y="1" width="295" height="1" uuid="e06bd0cf-a0cf-4a53-805c-3d7d9e8eeec2">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+			</line>
+		</band>
+		<band height="40">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[$F{complaints}!=""]]></printWhenExpression>
+			<staticText>
+				<reportElement x="-19" y="1" width="100" height="10" uuid="dcbe2091-1b77-4e32-b144-bf7c26f8cd6c">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Complaints]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="-19" y="11" width="275" height="29" uuid="9da00f3f-e26e-46c3-855e-a8b98cd728ce"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{complaints}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-20" y="1" width="295" height="1" uuid="636b2339-2eaf-4013-a1c3-635f3479c82d"/>
+			</line>
+		</band>
+		<band height="40">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[$F{tests}!=""]]></printWhenExpression>
+			<line>
+				<reportElement x="-19" y="1" width="295" height="1" uuid="361099a2-12f1-4487-bd0d-fd15e9cb50ad"/>
+			</line>
+			<staticText>
+				<reportElement x="-19" y="2" width="100" height="10" uuid="8f104d43-d222-4fe6-be26-525179d69b6b"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tests]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="-19" y="11" width="275" height="29" uuid="7024edfc-6e61-4766-8e75-6aea4983ce87">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tests}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="40">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[$F{diagnoses}!=""]]></printWhenExpression>
+			<staticText>
+				<reportElement x="-19" y="2" width="100" height="10" uuid="3eb67d12-19f2-4bfd-8b00-a84ee9678b25"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Diagnosis]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-19" y="1" width="295" height="1" uuid="50c84112-5645-4802-92e0-7632cd61a0cb"/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="-19" y="11" width="275" height="29" uuid="09c4b7b8-2375-4494-b343-4e2a948c9440"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{diagnoses}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="40">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[$F{medications}!=""]]></printWhenExpression>
+			<line>
+				<reportElement x="-17" y="1" width="295" height="1" uuid="202fd005-b5f8-4e3d-b539-a0fe195a0df5"/>
+			</line>
+			<staticText>
+				<reportElement x="-18" y="1" width="210" height="10" uuid="01979481-3ffd-4024-ad15-7cd0cc8efdca"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Medications prescribed]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="-18" y="11" width="275" height="29" uuid="55f3c117-1657-42f2-81c0-76448044ed2d"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{medications}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="40">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[$F{referral}!=null]]></printWhenExpression>
+			<line>
+				<reportElement x="-19" y="1" width="295" height="1" uuid="23f6048e-c7c2-4c76-9d98-43df6b440dd4"/>
+			</line>
+			<staticText>
+				<reportElement x="-18" y="1" width="210" height="10" uuid="fce42be0-3e99-4cb7-b875-eacff49fa0ea"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Referal information]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="-18" y="11" width="275" height="29" uuid="98db3380-4720-4245-96ba-94d429cfd948"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{referral}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

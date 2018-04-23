@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>school</artifactId>
+		<groupId>zw.co.elearning.school</groupId>
+		<version>2.0.1</version>
+	</parent>
+	<artifactId>school-reports</artifactId>
+	<name>School Reports</name>
+	<description>School Reports</description>
+	<properties>
+		<start-class>zw.co.elearning.school.SchoolApp</start-class>
+	</properties>
+
+	<dependencies>
+		<!-- jasper resporting -->
+		<!-- https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports -->
+		<dependency>
+			<groupId>net.sf.jasperreports</groupId>
+			<artifactId>jasperreports</artifactId>
+			<version>${jasperreports.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jooq</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>zw.co.elearning.school</groupId>
+			<artifactId>school-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>zw.co.elearning.school</groupId>
+			<artifactId>school-domain</artifactId>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.alexnederlof</groupId>
+				<artifactId>jasperreports-plugin</artifactId>
+				<version>2.0</version>
+				<dependencies>
+					<dependency>
+						<groupId>net.sf.jasperreports</groupId>
+						<artifactId>jasperreports</artifactId>
+						<version>${jasperreports.version}</version>
+					</dependency>
+				</dependencies>
+				<executions>
+					<execution>
+						<!-- <phase>generate-resources</phase> -->
+						<goals>
+							<goal>jasper</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<compiler>net.sf.jasperreports.engine.design.JRJdtCompiler</compiler>
+					<sourceDirectory>src/main/resources/reports</sourceDirectory>
+					<outputDirectory>${project.build.directory}/classes/reports</outputDirectory>
+					<outputFileExt>.jasper</outputFileExt>
+					<xmlValidation>true</xmlValidation>
+					<verbose>false</verbose>
+					<numberOfThreads>4</numberOfThreads>
+					<failOnMissingSourceDirectory>true</failOnMissingSourceDirectory>
+					<sourceScanner>org.codehaus.plexus.compiler.util.scan.StaleSourceScanner</sourceScanner>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>jooq</id>
+			<build>
+				<plugins>
+					<plugin>
+
+						<!-- Specify the maven code generator plugin -->
+						<groupId>org.jooq</groupId>
+						<artifactId>jooq-codegen-maven</artifactId>
+						<!-- The plugin should hook into the generate goal -->
+						<executions>
+							<execution>
+								<goals>
+									<goal>generate</goal>
+								</goals>
+							</execution>
+						</executions>
+
+						<dependencies>
+							<dependency>
+								<groupId>mysql</groupId>
+								<artifactId>mysql-connector-java</artifactId>
+								<version>${mysql.version}</version>
+							</dependency>
+						</dependencies>
+
+						<!-- Specify the plugin configuration. The configuration format is 
+							the same as for the standalone code generator -->
+						<configuration>
+							<!-- JDBC connection parameters -->
+							<jdbc>
+								<driver>com.mysql.jdbc.Driver</driver>
+								<url>jdbc:mysql://localhost/school</url>
+								<user>root</user>
+								<password>password</password>
+							</jdbc>
+
+							<!-- Generator parameters -->
+							<generator>
+								<name>org.jooq.util.DefaultGenerator</name>
+								<generate>
+									<relations>false</relations>
+									<records>false</records>
+									<daos>false</daos>
+								</generate>
+								<strategy>
+									<matchers>
+										<tables>
+											<table>
+												<tableClass>
+													<transform>UPPER</transform>
+													<expression>$0</expression>
+												</tableClass>
+											</table>
+										</tables>
+									</matchers>
+								</strategy>
+								<database>
+									<name>org.jooq.util.mysql.MySQLDatabase</name>
+									<includes>.*</includes>
+									<excludes></excludes>
+									<inputSchema>school</inputSchema>
+								</database>
+								<target>
+									<packageName>zw.co.elearning.school.db</packageName>
+									<directory>src/main/java</directory>
+								</target>
+							</generator>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+</project>
